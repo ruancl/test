@@ -26,6 +26,8 @@ jobs:
     #runs-on: ubuntu-latest
     runs-on: 
       - self-hosted
+      - Linux 
+      - X64
       - node2
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -33,5 +35,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ inputs.name }}"
+    - name: mkdir
+      run: mdkir test
     - name: Send greeting
       run: mkdir aa
